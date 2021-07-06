@@ -1,8 +1,11 @@
-/*
-Reference: https://github.com/9PEO0xNd/M5Gray_MPU6886_BMM150
-ปรับปรุงมาจาก: https://github.com/omegatao/M5StackGrey_MPU6886_BMM150_AHRS_sample
-- Build ใน Arduino IDE ไม่ได้ มี Error
-*/
+/*****************************************************************************************************
+Reference: 
+1. https://github.com/9PEO0xNd/M5Gray_MPU6886_BMM150
+2. https://github.com/omegatao/M5StackGrey_MPU6886_BMM150_AHRS_sample
+Improve by: Sahakoon
+Email: p.sahakoon@gmail.com
+Date: 6 July 2021
+*****************************************************************************************************/
 /*
 #include “filename.h” will look in the sketch folder first and next in the library directories
 #include <filename.h> will only look in the library directories 
@@ -167,7 +170,6 @@ void loop()
     bndl.add("/pitch/0").add(pitchNom);
     bndl.add("/yaw/0").add(yawNom);
     bndl.add("/buttonA/0").add(buttonA);
-    //bndl.add("/buttonA/0").add((M5.BtnA.isPressed())?"HIGH":"LOW");
 
     udp.beginPacket(udpAddress,udpPort);
     bndl.send(udp); // send the bytes to the SLIP stream
@@ -175,7 +177,7 @@ void loop()
     bndl.empty(); // empty the bundle to free room for a new one
 
   }
-  //Wait for 100 msec
+  //Wait for 10 msec
   delay(10);
 
   /*************************Sensor Operation**************************************/
