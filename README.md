@@ -1,4 +1,4 @@
-# TrackOrientationOSC for arduino IDE
+# M5Stack Gray TrackOrientationOSC for arduino IDE
 Features
 1. M5Stack can track the orientation (pitch, roll, yaw).
 2. M5Stack send the data by WiFi OSC (Open Sound Control) protocol.
