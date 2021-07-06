@@ -24,8 +24,8 @@ Date: 6 July 2021
 #include <OSCBundle.h>
 /**************************WiFi Variable********************************/
 // WiFi network name and password:
-const char * networkName = "Kisada_plus2";
-const char * networkPswd = "fc0848008909g";
+const char * networkName = "your-ssid";
+const char * networkPswd = "your-password";
 
 //IP address to send UDP data to:
 // either use the ip address of the server or 
